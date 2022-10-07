@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.println("What year is today?");
+      var year = scanner.nextInt();
+      while (true) {
+
+          System.out.println("What year were you born?");
+          var born = scanner.nextInt();
+
+          if (born == 0)
+              break;
+
+          var result = year-born;
+          System.out.println("Your age is " + result + "!");
+      }
+      }
+}
